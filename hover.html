@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul class="navbar">
+      <div onmouseover="active()"  id="my-menu" class="menu">
+        Menu A
+        <ul class="menu-list" onmouseout="deactive()">
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+        </ul>
+      </div>
+    </ul>
+  </body>
+  <script>
+    function active() {
+      document.getElementById("my-menu").classList.add("show");
+    }
+    function deactive() {
+      document.getElementById("my-menu").classList.remove("show");
+    }
+  </script>
+</html>
