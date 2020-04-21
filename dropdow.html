@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <ul class="navbar">
+    <button onmouseover="opendropdow()" onmouseout="closedropdow()" class="dropbtn">Dropdown</button>
+    <ul id="myDropdown" class="dropdown-content">
+      <li>Link 1</li>
+      <li>Link 2</li>
+      <li>Link 3</li>
+    </ul>
+  </ul>
+</body>
+
+<script>
+
+  function opendropdow() {
+    document.getElementById("myDropdown").classList.add("show");
+  }
+
+  function closedropdow() {
+    document.getElementById("myDropdown").classList.remove("show")
+  }
+
+
+</script>
+
+</html>

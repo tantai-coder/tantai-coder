@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #333;
+  }
+  
+  .menu {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: red;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .menu-list {
+    top: 46px;
+    left: 0;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 105px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0px;
+    overflow: auto;
+  }
+   
+  .menu-list li {
+    color: black;
+    padding: 12px 16px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    list-style-type: none;
+  }
+  
+  .menu-list li:hover {
+    background-color: rgb(138, 220, 231);
+  }
+  
+  .menu.show .menu-list {display: block;}
